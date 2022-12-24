@@ -22,7 +22,7 @@ namespace UserWebAPI.Controllers
         //// POST api/<UserController>
       
         [HttpPost("insertAll")]
-        public async Task<ActionResult<bool>> InsertAll([FromBody] Object value)
+        public async Task<ActionResult<bool>> InsertAll([FromBody] Object  value)
         {
             string a="";
             var res = await userBL.insertAll(a);
